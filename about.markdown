@@ -17,4 +17,4 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll-->
 
-[boysimulator](https://www.instagram.com/boysimulator/)
+Figuring it out.
