@@ -1,0 +1,71 @@
+I"M'<p>Initialize dictionary data type and execute a print statement to the terminal:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nb">print</span><span class="p">()</span></code></pre></figure>
+
+<p>Add data to dictionary structure:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#Cathode Design</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cat_active_percent'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.97</span> <span class="c1">#%</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cat_chg_s_cap'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">214.33</span> <span class="c1">#mAh/g</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cat_dchg_s_cap'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">179.69</span> <span class="c1">#mAh/g</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cat_density_targ'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.42</span> <span class="c1">#g/cc</span>
+
+<span class="c1">#Anode Design</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'an_active_percent'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.948</span> <span class="c1">#%</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'an_chg_s_cap'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">386</span> <span class="c1">#mAh/g</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'an_dchg_s_cap'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">337</span> <span class="c1">#mAh/g</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'an_density_targ'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.7</span> <span class="c1">#g/cc</span>
+
+<span class="c1">#Cell Design</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'ac_ratio'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.04</span>
+
+<span class="c1">#Cell Program Requirements</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'capacity_target'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">78</span> <span class="c1">#Ah</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cell_thickness_target'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">8.5</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cell_DCR_target'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.35</span> <span class="c1">#mOhm</span>
+
+<span class="c1">#Empirical Data/Properties</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cat_swelling'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.06</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'an_swelling'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.210</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'DCR_a_coefficient'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0006</span> <span class="c1">#DCR = ax2+bx+c</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'DCR_b_coefficient'</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.0401</span> <span class="c1">#DCR = ax2+bx+c</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'DCR_c_coefficient'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.9773</span> <span class="c1">#DCR = ax2+bx+c</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'large_cell_DCR_factor'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1">#Product-Level Cell Componentry</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'al_foil_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">497</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'al_foil_width'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">95</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'al_foil_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1">#um</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'al_tab_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'al_tab_width'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'al_tab_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cu_foil_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">501.5</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cu_foil_width'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">98</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cu_foil_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1">#um</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cu_tab_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cu_tab_width'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cu_tab_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'pouch_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">153</span> <span class="c1">#um</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'separator_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">17</span> <span class="c1">#um</span>
+
+<span class="c1">#Research-Level Cell Componentry</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_al_foil_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">44</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_al_foil_width'</span><span class="p">]</span><span class="o">=</span> <span class="mf">30.4</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_al_foil_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1">#um</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_al_tab_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">26</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_al_tab_width'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_al_tab_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.098</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_cu_foil_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">46</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_cu_foil_width'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">32.4</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_cu_foil_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1">#um</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_ni_tab_length'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">26</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_ni_tab_width'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1">#mm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'SLP_ni_tab_thickness'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1">#mm</span>
+
+<span class="c1">#Physical Quantities</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'al_resistivity'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0000029</span> <span class="c1">#ohm-cm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'cu_resistivity'</span><span class="p">]</span> <span class="o">=</span> <span class="o">.</span><span class="mo">00000172</span> <span class="c1">#ohm-cm</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">'ni_resistivity'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.00000699</span> <span class="c1">#ohm-cm</span></code></pre></figure>
+
+:ET
