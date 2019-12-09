@@ -53,3 +53,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+    - README_minima.md
+    - LICENSE.txt
