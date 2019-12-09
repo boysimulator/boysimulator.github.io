@@ -28,6 +28,12 @@ twitter_username: simosean
 github_username:  boysimulator
 instagram_username: boysimulator
 
+#Site Design
+header_pages:
+  - about.markdown
+  - code.markdown
+  - illustration.markdown
+
 # Build settings
 #theme: minima
 plugins:

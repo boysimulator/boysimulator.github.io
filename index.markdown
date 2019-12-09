@@ -4,3 +4,4 @@
 
 layout: home
 ---
+test link to Sean Recipes page while that page remains "published: false" [Sean Recipes](/sean_recipes/index.html)
