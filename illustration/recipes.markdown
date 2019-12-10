@@ -4,7 +4,15 @@ title: Sean Recipes
 permalink: /illustration/sean_recipes/
 ---
 
-![Cat Arm Popsicle](/img/cat_arm_popsicle.jpg)
-<br>
-<br>
+#Sean Recipes #2: Chicken Castle
+
 ![Chicken Castle](/img/chicken_castle.jpg)
+
+
+
+
+
+
+#Sean Recipes #3: Cat Arm Popsicle
+
+![Cat Arm Popsicle](/img/cat_arm_popsicle.jpg)
