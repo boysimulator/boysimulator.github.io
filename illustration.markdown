@@ -10,4 +10,4 @@ Sean Recipes:
 
 Vodka Vending Machines:
 =======================
-[<img src="/img/vodka_vending_machine_russia_draft_icon.jpg">](illustration/vodka_vending_machines/index.html)
+[<img src="/img/vodka_vending_machine_russia_draft_icon.jpg">](/illustration/vodka_vending_machines/index.html)
