@@ -4,6 +4,8 @@ title: SLP
 permalink: /professional_projects/slp_dcr/
 ---
 
+Project GitHub repository at [https://github.com/boysimulator/batt-dcr-targets](https://github.com/boysimulator/batt-dcr-targets)
+
 Initialize dictionary data type and execute a print statement to the terminal:
 
 {% highlight ruby %}
