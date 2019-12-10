@@ -31,7 +31,7 @@ instagram_username: boysimulator
 #Site Design
 header_pages:
   - about.markdown
-  - code.markdown
+  - professional_projects.markdown
   - illustration.markdown
 
 # Build settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sean Recipes
-permalink: /sean_recipes/
+permalink: /illustration/sean_recipes/
 ---
 
 ![Cat Arm Popsicle](/img/cat_arm_popsicle.jpg)

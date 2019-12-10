@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Code
-permalink: /code/
+title: SLP
+permalink: /professional_projects/slp_dcr/
 ---
 
 Initialize dictionary data type and execute a print statement to the terminal:
